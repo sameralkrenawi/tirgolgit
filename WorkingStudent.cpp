@@ -3,11 +3,11 @@
 #include <string>
 
 WorkingStudent::WorkingStudent(){
-    salary=0;
+    same_institue=true;
 }
 
-Employee::Employee(const Employee& other):Person(other)// copy of the person (heritance)
-{years=other.years;// just copy of the only variable of the class}
+WorkingStudent::WorkingStudent(const WorkingStudent& other):Student(other):Employee(other)// copy of the person (heritance)
+}
 
 Employee ::Employee (string pname, long id, int page,float salary):Person(pname,id,page)
     {
