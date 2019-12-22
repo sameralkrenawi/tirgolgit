@@ -9,9 +9,6 @@ WorkingStudent::WorkingStudent(){
 WorkingStudent::WorkingStudent(const WorkingStudent& other):Student(other):Employee(other)// copy of the person (heritance)
 }
 
-Employee ::Employee (string pname, long id, int page,float salary):Person(pname,id,page)
-    {
-        this.salary=salary;
-    }
+WorkingStudent:WorkingStudent(bool same_institue):Student(int average, string institute):Employee(string FName,string LName,string Identity,int Y){
 
-Employee::~Employee() {}
+}
