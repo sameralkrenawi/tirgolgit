@@ -45,7 +45,6 @@ private:
 			throw std::invalid_argument("Invalid length of institute");
 		}
 
-
 	}
 
 };
