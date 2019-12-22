@@ -1,23 +1,15 @@
+#include "Person.h"
+#include <iostream>
+#include <stdexcept>
+
+using namespace std;
+
 class WorkingStudent:public Student:public Employee {
 private:
-    string name;
-    long id;
-    int age;
-    //default constructor
+    bool same_institue=true;
 
-    WorkingStudent:Person(string pname, long id, int page)
+    WorkingStudent:WorkingStudent(bool same_institue)
     {
-        this.id = id;
-        if (pname.length < 10)
-            name = pname;
-        else {
-            throw std::invalid_argument("Invalid length of name");
-        }
-        if (age >= 0 && age < 120) {
-            age = page;
-        }
-        else {
-            throw std::invalid_argument("Invalid Age");
-        }
+        this.same_institue=same_institue;
     }
 };
