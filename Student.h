@@ -12,6 +12,18 @@ private:
 	int average;
 	string institute;
 
+	Student::Student()
+	{
+		this.average = 0;
+		this.institute = NULL;
+	}
+
+	Student::Student(Student obj)
+	{
+		this.average = obj.average;
+		this.institute = obj.institute;
+	}
+
 	Student::Student(int average, string institute)
 	{
 		this.average = average;
