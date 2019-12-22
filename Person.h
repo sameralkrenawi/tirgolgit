@@ -17,12 +17,12 @@ private:
     {
         this.id = id;
         if (pname.length < 10)
-            name = pname;
+            this.name = pname;
         else {
             throw std::invalid_argument("Invalid length of name");
         }
         if (age >= 0 && age < 120) {
-            age = page;
+            this.age = page;
         }
         else {
             throw std::invalid_argument("Invalid Age");
