@@ -5,14 +5,24 @@
 
 using namespace std;
 
-template<class T>
+
 class Person {
 private:
     string name;
     long id;
     int age;
     //default constructor
-
+    Person::Person()
+    {
+	     this.name = Null;
+	     this.age = 0;
+       this.id=Null;
+    }
+    Person::Person(Person p){
+      this.name=p.name;
+      this.id=p.id;
+      this.age=p.age;
+    }
     Person::Person(string pname, long id, int page)
     {
         this.id = id;

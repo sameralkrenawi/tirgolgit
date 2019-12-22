@@ -7,7 +7,7 @@ using namespace std;
 
 class Employee:public Person {
 private:
-    float salary=0;
+    float salary;
 public:
         Employee();
         Employee(string FName,string LName,string Identity,int Y);
