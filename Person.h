@@ -14,9 +14,9 @@ private:
     //default constructor
     Person::Person()
     {
-	     this.name = "";
+	     this.name = Null;
 	     this.age = 0;
-       this.id=id;
+       this.id=Null;
     }
     Person::Person(Person p){
       this.name=p.name;
